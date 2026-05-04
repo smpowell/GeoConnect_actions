@@ -16,7 +16,6 @@ next-steps:
     type: resource
     ref: choose-a-platform
 ---
-# Geocoding
 
 Geocoding is the process of determining geographic coordinates for place names, street addresses, and codes (e.g., zip codes). Geocoding is typically preceded by the data cleaning step of preprocessing and standardizing the format of the data you will be geocoding. The resulting locations are output as geographic features with attributes, which can be used for mapping or spatial analysis. 
 
