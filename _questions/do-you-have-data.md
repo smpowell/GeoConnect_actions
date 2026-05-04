@@ -25,19 +25,7 @@ If you have a scanned image of a map, you can utilize it in a GIS platform.
 Other
 Depending on the size of your data and where it’s coming from, the data may be provided as a service that you can add directly to your map rather than downloading it. Reach out to your Librarian if you are interested in this [knowing that in the future we can provide a section on this]
 ---------  
-next-steps:  
-- label: "Yes, it's a GIS file or online mapping platform"  
-type: question  
-ref: choose-a-platform
-- label: "Yes, it's a spreadsheet"  
-type: question  
-ref: what-is-geo-id
-- label: "Yes, it's a digitized image of a map"  
-type: question  
-ref: work-with-images
-- label: "No, I don't have data that’s ready to be used"  
-type: resource  
-ref: finding-gis-data
+
 next-steps:
   - label: "Yes, it's a GIS file or online mapping platform"
     type: question
