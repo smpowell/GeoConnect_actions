@@ -18,13 +18,13 @@ Does your data cover your area of interest? Does it represent what you need it t
 <details class="collapsible">
 <summary><strong>GIS Files + Online Platforms</strong></summary>
 Sometimes we find data that’s available in one of the many acceptable GIS file formats. Explore some common GIS file types:
-Shapefile (zipped collection of subfiles): Contains point, lines, and areas
-GeoJSON (.geojson): 
-KML/KMZ (.kml/.kmz)
-GeoTIFF (.tiff)
-Geodatabase (.gdb) 
-Geopackage (.gpkg)
-[ArcGIS Pro project package (.ppkx)] ?
+* Shapefile (zipped collection of subfiles): Contains point, lines, and areas
+* GeoJSON (.geojson): 
+* KML/KMZ (.kml/.kmz)
+* GeoTIFF (.tiff)
+* Geodatabase (.gdb) 
+* Geopackage (.gpkg)
+* ArcGIS Pro project package (.ppkx) ?
 
 There may be other times where you don’t have a tangible file. Your data might already be in an online GIS platform. 
 
@@ -33,9 +33,9 @@ There may be other times where you don’t have a tangible file. Your data might
 <details class="collapsible">
 <summary><strong>Spreadsheets</strong></summary>
 Many times you may have data that is in a spreadsheet format. If your data is in a spreadsheet, you must have at least one field that contains location based information. This may include, Latitude/Longitude, an address, or some other type of geographic identifier (such as census tracts, administrative boundaries, school districts, or other).
-CSV 
-XLSX
-TXT 
+* CSV 
+* XLSX
+* TXT 
 
 </details>
 
@@ -43,8 +43,6 @@ TXT
 <summary><strong>Image</strong></summary>
 
 If you have a scanned image of a map, you can utilize it in a GIS platform. 
-</details>
-
 </details>
 
 <details class="collapsible">
