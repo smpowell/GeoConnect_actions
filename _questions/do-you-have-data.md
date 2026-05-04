@@ -4,7 +4,10 @@ sub-title: "Here are some questions to think through about your data before you 
 permalink: /do-you-have-data/
 ---
 
-To get started mapping, you’ll need data that’s tied to locations. Knowing what format your data is in will help you map it in the most efficient way.
+To get started mapping, you’ll need data that’s tied to locations. Knowing what format your data is in will help you map it in the most efficient way. You may find that you have several different types of data. We recommend starting with one type and then revisiting this page to review your other types. 
+
+Additional questions to think about before and during your mapping adventures:  
+Does your data cover your area of interest? Does it represent what you need it to in the way you need it to? Does it contain personally identifiable information (PII)? Does it cover the time period you need it to?
 
 <!-- Expand / Collapse Controls -->
 <div style="margin: 1.5rem 0;">
@@ -14,27 +17,40 @@ To get started mapping, you’ll need data that’s tied to locations. Knowing w
 
 <details class="collapsible">
 <summary><strong>GIS Files + Online Platforms</strong></summary>
+Sometimes we find data that’s available in one of the many acceptable GIS file formats. Explore some common GIS file types:
+Shapefile (zipped collection of subfiles): Contains point, lines, and areas
+GeoJSON (.geojson): 
+KML/KMZ (.kml/.kmz)
+GeoTIFF (.tiff)
+Geodatabase (.gdb) 
+Geopackage (.gpkg)
+[ArcGIS Pro project package (.ppkx)] ?
 
-- Shapefile  
-- GeoJSON  
-- KML/KMZ  
-- GeoTIFF  
+There may be other times where you don’t have a tangible file. Your data might already be in an online GIS platform. 
 
 </details>
 
 <details class="collapsible">
 <summary><strong>Spreadsheets</strong></summary>
-
-- CSV  
-- XLSX  
-- TXT  
+Many times you may have data that is in a spreadsheet format. If your data is in a spreadsheet, you must have at least one field that contains location based information. This may include, Latitude/Longitude, an address, or some other type of geographic identifier (such as census tracts, administrative boundaries, school districts, or other).
+CSV 
+XLSX
+TXT 
 
 </details>
 
 <details class="collapsible">
 <summary><strong>Image</strong></summary>
 
-Scanned maps can be used in GIS platforms.
+If you have a scanned image of a map, you can utilize it in a GIS platform. 
+</details>
+
+</details>
+
+<details class="collapsible">
+<summary><strong>Other</strong></summary>
+
+Depending on the size of your data and where it’s coming from, the data may be provided as a service that you can add directly to your map rather than downloading it. Reach out to your Librarian if you are interested in this [knowing that in the future we can provide a section on this]
 
 </details>
 
