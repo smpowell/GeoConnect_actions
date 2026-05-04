@@ -1,7 +1,7 @@
 ---
 title: "Do you have the data you need?"
 sub-title: "Here are some questions to think through about your data before you get started mapping. List of data assessment questions."
-permalink: /data-you-need/
+permalink: /do-you-have-data/
 ---
 
 To get started mapping, you’ll need data that’s tied to locations. Knowing what format your data is in will help you map it in the most efficient way.
