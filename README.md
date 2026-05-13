@@ -117,6 +117,8 @@ uc-gis/
 ---
 title: "Your Question Here?"
 sub-title: "Brief context"
+parent: "previous page"
+permalink: "test-test"
 next-steps:
   - label: "Option 1"
     type: question
@@ -125,6 +127,16 @@ next-steps:
     type: resource
     ref: resource-filename
 ---
+
+<nav class="breadcrumbs">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  {% if page.parent %}
+    /
+    <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
+  {% endif %}
+  /
+  <span>{{ page.title }}</span>
+</nav>
 
 Optional description content here.
 
