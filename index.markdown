@@ -33,8 +33,8 @@ title: UC GIS Consultation Tool
         </a>
       </div>
       {% endif %}
-
-{% assign start_question = site.questions | where: "slug", "graphic-representation" | first %}
+<div class="cards-grid">
+{% assign start_question = site.questions | where: "slug", "graphic-representation" | second %}
       {% if start_question %}
       <div class="card card-featured card-question">
         <a href="{{ start_question.url | relative_url }}" class="card-link">
@@ -47,6 +47,7 @@ title: UC GIS Consultation Tool
           </div>
         </div>
       </div>
+       {% endif %}
       
 <!-- Placeholder cards for future starting points -->
       <div class="card card-question">
