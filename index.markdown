@@ -76,8 +76,6 @@ title: UC GIS Consultation Tool
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
   <div class="about-section">
     <h2>About This Tool</h2>
