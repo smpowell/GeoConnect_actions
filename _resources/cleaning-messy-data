@@ -35,7 +35,19 @@ Even if your data comes from a published source, it may contain gaps or other fl
 
 The more data you have, the longer it may take to standardize and clean. While cleaning messy data can be time consuming, overall it saves you time and stress later on.
 
-## General Key Data Cleaning Steps
+
+<details>
+<summary><strong>General Key Data Cleaning Steps</strong></summary>
+
+<ul>
+  <li>Create a Backup: Always work on a copy of the original dataset.</li>
+  <li>Remove Duplicates & Irrelevant Data: Identify and remove redundant rows to ensure data integrity.</li>
+  <li>Standardize Data Formats: Ensure consistent capitalization, date formats, and numeric types (e.g., remove leading/trailing spaces).</li>
+  <li>Fix Structural Errors: Correct typos, mislabeled classes, and inconsistent naming conventions.</li>
+</ul>
+
+</details>
+
 
 - **Create a Backup:** Always work on a copy of the original dataset.
 - **Remove Duplicates & Irrelevant Data:** Identify and remove redundant rows to ensure data integrity.
