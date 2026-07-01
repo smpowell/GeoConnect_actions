@@ -15,11 +15,11 @@ next-steps:
     type: resource
     ref: get-help
 ---
-### Ingest-Data
+# Ingest Data
 
 Links to platform-specific documentation about how to get data into the platform to visualize it on a map; include a box about basemaps. There is more than one way to add data to your map. Below are just a few suggested approaches. 
 
-### Basemaps
+## Basemaps
 
 Regardless of what GIS platform you choose to use, a basemap will orient your data to the real world and provide context for maps at global or local scales. A basemap layer is typically the first layer added to a map. It allows you to easily see where geographic features are located. It typically includes features and labels for land, water, roads, buildings, cities, places, and administrative boundaries, but can also include satellite and aerial image data. 
   
@@ -27,7 +27,7 @@ Regardless of what GIS platform you choose to use, a basemap will orient your da
   <button onclick="collapseAll()">Collapse all</button>
 </div>
 <details class="collapsible">
-<summary>### Adding Data:</summary>
+<summary>Adding Data:</summary>
 There are a few different ways to add data to a map. 
 
 ### ArcGIS Online
@@ -56,7 +56,7 @@ Adding GIS (Geographic Information System) data to Python is very common in data
 # 1. Install the right libraries
 # 2. Load GIS data (e.g., shapefiles, GeoJSON, raster)
 # 3. Work with it (analyze, transform, visualize)
-```
+
 import geopandas as gpd
 
 # Load shapefile
@@ -67,17 +67,19 @@ print(gdf.head())
 
 # Load GeoJSON
 gdf = gpd.read_file("data/file.geojson")
-```
+
 </details>
 <details class="collapsible">
 
 ## Did you know?
 
-* If you ingested your data using ArcGIS Pro or ArcGIS Online, you can add additional datasets using the ArcGIS Living Atlas. (LINK out to Finding Data Resources and the Living Atlas)...   
-* In ArcGIS Online, you can also drag and drop your data file directly onto the map, which will add it to your content under **My Content**...   
-* In QGIS, you can add publicly hosted data on ArcGIS Online through the ArcGIS Rest Server (https://docs.qgis.org/3.44/en/docs/user\_manual/managing\_data\_source/opening\_data.html)... 
-* In the Contents pane (ArcGIS) or Layers List (QGIS), polygon layers toward the top will obscure layers listed beneath. You can drag and drop polygon layers to the bottom of the list so that they are not covering up your other data...
+* If you ingested your data using ArcGIS Pro or ArcGIS Online, you can add additional datasets using the ArcGIS Living Atlas. (LINK out to Finding Data Resources and the Living Atlas).  
 
+* In ArcGIS Online, you can also drag and drop your data file directly onto the map, which will add it to your content under **My Content**.  
+
+* In QGIS, you can add publicly hosted data on ArcGIS Online through the ArcGIS Rest Server (https://docs.qgis.org/3.44/en/docs/user\_manual/managing\_data\_source/opening\_data.html).  
+
+* In the Contents pane (ArcGIS) or Layers List (QGIS), polygon layers toward the top will obscure layers listed beneath. You can drag and drop polygon layers to the bottom of the list so that they are not covering up your other data.  
 ## Troubleshooting
 
 * **Coordinate System and Projection Errors**:   
