@@ -11,7 +11,6 @@ next-steps:
   - label: ""Yes, it's where I expected it to be."
     type: question
     ref: graphic-representation
-next-steps:
   - label: "No, it's in the wrong place, or not there at all!"
     type: resource
     ref: get-help
@@ -74,10 +73,10 @@ gdf = gpd.read_file("data/file.geojson")
 
 ## Did you know?
 
-* If you ingested your data using ArcGIS Pro or ArcGIS Online, you can add additional datasets using the ArcGIS Living Atlas. (LINK out to Finding Data Resources and the Living Atlas).   
-* In ArcGIS Online, you can also drag and drop your data file directly onto the map, which will add it to your content under **My Content**.   
-* In QGIS, you can add publicly hosted data on ArcGIS Online through the ArcGIS Rest Server (https://docs.qgis.org/3.44/en/docs/user\_manual/managing\_data\_source/opening\_data.html)  
-* In the Contents pane (ArcGIS) or Layers List (QGIS), polygon layers toward the top will obscure layers listed beneath. You can drag and drop polygon layers to the bottom of the list so that they are not covering up your other data.
+* If you ingested your data using ArcGIS Pro or ArcGIS Online, you can add additional datasets using the ArcGIS Living Atlas. (LINK out to Finding Data Resources and the Living Atlas)...   
+* In ArcGIS Online, you can also drag and drop your data file directly onto the map, which will add it to your content under **My Content**...   
+* In QGIS, you can add publicly hosted data on ArcGIS Online through the ArcGIS Rest Server (https://docs.qgis.org/3.44/en/docs/user\_manual/managing\_data\_source/opening\_data.html)... 
+* In the Contents pane (ArcGIS) or Layers List (QGIS), polygon layers toward the top will obscure layers listed beneath. You can drag and drop polygon layers to the bottom of the list so that they are not covering up your other data...
 
 ## Troubleshooting
 
