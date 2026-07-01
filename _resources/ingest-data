@@ -46,28 +46,31 @@ There are a few different ways to add data to a map.
 </div>
 
 <details class="collapsible">
-<summary>ArcGIS Online</summary>
+  <summary><strong>ArcGIS Online</strong></summary>
 
-We recommend adding data first to the “My Content” section.
-
+  <p>
+    We recommend adding data first to the <strong>My Content</strong> section and then adding the data to a map.
+  </p>
 </details>
 
 <details class="collapsible">
-<summary>ArcGIS Pro</summary>
+  <summary><strong>ArcGIS Pro</strong></summary>
 
-We recommend using the Menu and the Add Data button and selecting the data option.
-
+  <p>
+    We recommend using the Add Data button and selecting the appropriate data source.
+  </p>
 </details>
 
 <details class="collapsible">
-<summary>QGIS</summary>
+  <summary><strong>QGIS</strong></summary>
 
-Add data in QGIS using the Data Source Manager tool. Another way to add data is to drag and drop it from the Browser to the Layers list.
-
+  <p>
+    Add data in QGIS using the Data Source Manager tool. Another option is to drag and drop data from the Browser panel into the Layers panel.
+  </p>
 </details>
 
 <details class="collapsible">
-<summary>Python</summary>
+  <summary><strong>Python</strong></summary>
 
 <pre><code class="language-python">
 import geopandas as gpd
@@ -79,53 +82,63 @@ print(gdf.head())
 </details>
 
 <script>
-
 function expandAll() {
   document
-    .querySelectorAll('details.collapsible')
-    .forEach(d => d.open = true);
+    .querySelectorAll("details.collapsible")
+    .forEach(function(d) {
+      d.open = true;
+    });
 }
 
 function collapseAll() {
   document
-    .querySelectorAll('details.collapsible')
-    .forEach(d => d.open = false);
+    .querySelectorAll("details.collapsible")
+    .forEach(function(d) {
+      d.open = false;
+    });
 }
 </script>
 
-<hr>
+---
 
 ## Did You Know?
 
 - If you ingested your data using ArcGIS Pro or ArcGIS Online, you can add additional datasets using the ArcGIS Living Atlas.
-- In ArcGIS Online, you can also drag and drop your data file directly onto the map, which will add it to your content under **My Content**.
-- In QGIS, you can add publicly hosted data on ArcGIS Online through the ArcGIS REST Server: https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html
-- In the Contents pane (ArcGIS) or Layers List (QGIS), polygon layers toward the top will obscure layers listed beneath. You can drag and drop polygon layers to the bottom of the list so they do not cover your other data.
+- In ArcGIS Online, you can drag and drop a data file directly onto the map, which will automatically add it to **My Content**.
+- In QGIS, you can connect to publicly hosted ArcGIS Online services through the ArcGIS REST Server connection.
+- In ArcGIS and QGIS, polygon layers near the top of the layer list can hide layers underneath them.
 
 ## Troubleshooting
 
 - **Coordinate System and Projection Errors**
-  - Missing or Wrong CRS: If you load tabular data (such as a CSV with XY coordinates) and points do not plot in the correct location or fail to draw, your CRS is likely mismatched. Confirm the data's coordinate system and ensure your map uses the same system.
+  - **Missing or Wrong CRS:** If you load tabular data such as a CSV with XY coordinates and the points appear in the wrong location, your coordinate reference system (CRS) is likely incorrect or undefined.
+  - Confirm the source CRS and ensure it matches your map projection.
 
 - **Corrupt Geometry**
-  - Check Geometry: Some features may have corrupt, null, or looping geometries.
-  - The Fix:
-    - ArcGIS Online: There is no native tool to fix corrupt geometry. Download the data and repair it manually or in ArcGIS Pro.
-    - ArcGIS Pro: Run the **Check Geometry** tool, then run **Repair Geometry** to fix invalid features.
-    - QGIS: Run the **Fix Geometries** tool found in **Processing > Toolbox**.
+  - **Check Geometry:** Some features may contain invalid, null, self-intersecting, or looping geometries.
+  - **The Fix:**
+    - **ArcGIS Online:** Download and repair the data outside ArcGIS Online.
+    - **ArcGIS Pro:** Run **Check Geometry** and then **Repair Geometry**.
+    - **QGIS:** Run **Fix Geometries** from **Processing > Toolbox**.
 
 - **Attribute Table Errors ("Could Not Load Data")**
-  - Failed to load rows: If the map draws features but the attribute table fails to open, there may be schema mismatches or bad spatial indexes.
-  - The Fix:
-    - ArcGIS Online: Download the data and review attribute table errors. Check for null values or unsupported characters.
-    - ArcGIS Pro: Recalculate thea new File Geodatabase.
-    - QGIS:
-      - Run **Create Spatial Index** if you receive a "No Spatial Index" error.
-      - For schema issues, install and run the **Table Structure Compare** plugin.
+  - **Failed to Load Rows:** Schema mismatches, corrupt records, or invalid spatial indexes can cause attribute tables to fail.
+  - **The Fix:**
+    - **ArcGIS Online:** Download the data and check for null values or unsupported characters.
+    - **ArcGIS Pro:** Recalculate the spatial index or export the data to a new File Geodatabase.
+    - **QGIS:**
+      - Run **Create Spatial Index**.
+      - Use the **Table Structure Compare** plugin to identify schema issues.
 
 ## General Resources
 
-- ESRI Basemaps: https://developers.arcgis.com/documentation/mapping-and-location-services/mapping/basemaps/
-- ArcGIS Online - Add Files as Items: https://doc.arcgis.com/en/arcgis-online/manage-data/add-files-as-items.htm
-- ArcGIS Pro - Add Data to Your Project: https://doc.esri.com/en/arcgis-pro/latest/get-started/add-data-to-your-project.html
-- QGIS Basic Map Preparation: https://docs.qgis.org/3.44/en/docs/training_manual/basic_map/preparation.html
+- ESRI Basemaps  
+  https://developers.arcgis.com/documentation/mapping-and-location-services/mapping/basemaps/
+
+- ArcGIS Online: Add Files as Items  
+  https://doc.arcgis.com/en/arcgis-online/manage-data/add-files-as-items.htm
+
+- ArcGIS Pro: Add Datattps://doc.esri.com/en/arcgis-pro/latest/get-started/add-data-to-your-project.html
+
+- QGIS: Basic Map Preparation  
+  https://docs.qgis.org/3.44/en/docs/training_manual/basic_map/preparation.html
