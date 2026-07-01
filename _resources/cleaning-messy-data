@@ -32,11 +32,9 @@ next_steps:
 </nav>
 
 Even if your data comes from a published source, it may contain gaps or other flaws that will result in an incomplete or misleading map. Cleaning messy data involves removing errors, duplicates, and inconsistencies to ensure accuracy. It can also involve reformatting your dataset(s) for compatibility with your chosen software.
-
-
+<br>
 The more data you have, the longer it may take to standardize and clean. While cleaning messy data can be time consuming, overall it saves you time and stress later on.
-
-
+<br>
 <strong>General Key Data Cleaning Steps</strong>
 
 <ul>
@@ -46,22 +44,22 @@ The more data you have, the longer it may take to standardize and clean. While c
   <li>Fix Structural Errors: Correct typos, mislabeled classes, and inconsistent naming conventions.</li>
 </ul>
 
-## GIS Formatting Considerations
-
+<strong>GIS Formatting Considerations/strong>
 To successfully use a CSV or Google Sheet in GIS software:
 
-- Each column contains a different type of information.
-  - For spatial data: latitude and longitude (in separate columns), place names, or addresses.
-- Each column has a header in the first row of the table.
-  - First character in the column header must be a letter.
-  - Don't use special characters (except underscores) or spaces in headers.
-  - Ensure each header is unique.
-  - No subheaders.
-- Use consistent formatting within a column.
-- Each row represents a different feature.
-- No blank rows.
-- For table joins, ensure matching field names and formats.
-
+<li>Each column contains a different type of information.</li>
+  <li>For spatial data: latitude and longitude (in separate columns), place names, or addresses.</li>
+<li>Each column has a header in the first row of the table.</li>
+  <li>First character in the column header must be a letter.</li>
+  <li>Don't use special characters (except underscores) or spaces in headers.</li>
+  <li>Ensure each header is unique.</li>
+  <li>No subheaders.</li>
+<li>Use consistent formatting within a column.</li>
+<li>Each row represents a different feature.</li>
+<li>No blank rows.</li>
+<li>For table joins, ensure matching field names and formats.</li>
+</ul>
+<br>
 ### Not This
 
 <img src="{{ '/assets/images/graph1.png' | relative_url }}"
