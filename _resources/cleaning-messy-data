@@ -48,12 +48,6 @@ The more data you have, the longer it may take to standardize and clean. While c
 
 </details>
 
-
-- **Create a Backup:** Always work on a copy of the original dataset.
-- **Remove Duplicates & Irrelevant Data:** Identify and remove redundant rows to ensure data integrity.
-- **Standardize Data Formats:** Ensure consistent capitalization, date formats, and numeric types.
-- **Fix Structural Errors:** Correct typos, mislabeled classes, and inconsistent naming conventions.
-
 ## GIS Formatting Considerations
 
 To successfully use a CSV or Google Sheet in GIS software:
