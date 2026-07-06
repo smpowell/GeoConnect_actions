@@ -20,13 +20,11 @@ next_steps:
 ---
 
 <nav class="breadcrumbs">
-   '/' | relative_url }}">geocoding</a>
+  <a href="{{ '/' | relative_url }}">Geocoding</a>
 
   {% if page.parent %}
     /
-    <a href="{{ page.parent_url | url }}
-      {{ page.parent }}
-    </a>
+    <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
   {% endif %}
 
   /
