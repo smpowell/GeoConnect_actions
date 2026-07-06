@@ -8,10 +8,10 @@ steps:
   - "Step 1 instructions"
   - "Step 2 instructions"
 next-steps:
-    - label: "Yes, it's a digitized image of a map"  
+  - label: "Yes, it's a digitized image of a map"  
     type: question  
     ref: do-you-have-data  
-   - label: "I'd like to map something about the data."  
+  - label: "I'd like to map something about the data."  
     type: resource  
     ref: qual-quant   
 ---
@@ -37,13 +37,13 @@ If you upload a scanned image of a map to a GIS, the platform doesn’t initiall
 3. Evaluate the accuracy using the Root Mean Square Error (RMSE) and adjust control points if necessary.  
 4. Export or save: once aligned, the spatial data can be saved as a GeoTIFF or GeoPDF, allowing GIS software to place the image where it belongs on the globe. 
 
-Example: Suppose you have a scanned historical map:
 <!-- Expand / Collapse Controls -->
 <div style="margin: 1.5rem 0;">
   <button onclick="expandAll()">Expand all</button>
   <button onclick="collapseAll()">Collapse all</button>
 </div>
 <details class="collapsible">
+<summary><strong>Example: Suppose you have a scanned historical map:</summary>
 1. On the scanned map, identify a road intersection.  
 2. Find that exact intersection on a georeferenced aerial image or basemap.  
 3. Repeat for several well-distributed locations.  
