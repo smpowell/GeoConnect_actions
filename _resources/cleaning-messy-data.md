@@ -30,90 +30,48 @@ next_steps:
   <span>{{ page.title }}</span>
 </nav>
 
-<p>
-  Even if your data comes from a published source, it may contain gaps or other flaws
-  that will result in an incomplete or misleading map. Cleaning messy data involves
-  removing errors, duplicates, and inconsistencies to ensure accuracy. It can also
-  involve reformatting your dataset(s) for compatibility with your chosen software.
-</p>
+# cleaning-messy-data
 
-<p>
-  The more data you have, the longer it may take to standardize and clean. While
-  cleaning messy data can be time consuming, overall it saves you time and stress later on.
-</p>
+Even if your data comes from a published source, it may contain gaps or other flaws that will result in an incomplete or misleading map. Cleaning messy data involves removing errors, duplicates, and inconsistencies to ensure accuracy. It can also involve reformatting your dataset(s) for compatibility with your chosen software. The more data you have, the longer it may take to standardize and clean. While cleaning messy data can be time consuming, overall it saves you time and stress later on.
 
-<strong>General Key Data Cleaning Steps</strong>
+### General Key Data Cleaning Steps:
 
-<ul>
-  <li>Create a Backup: Always work on a copy of the original dataset.</li>
-  <li>Remove Duplicates &amp; Irrelevant Data: Identify and remove redundant rows to ensure data integrity.</li>
-  <li>Standardize Data Formats: Ensure consistent capitalization, date formats, and numeric types (e.g., remove leading/trailing spaces).</li>
-  <li>Fix Structural Errors: Correct typos, mislabeled classes, and inconsistent naming conventions.</li>
-</ul>
+* **Create a Backup: Always work on a copy of the original dataset.**  
+* Remove Duplicates & Irrelevant Data: Identify and remove redundant rows to ensure data integrity.  
+* Standardize Data Formats: Ensure consistent capitalization, date formats, and numeric types (e.g., remove leading/trailing spaces).  
+* Fix Structural Errors: Correct typos, mislabeled classes, and inconsistent naming conventions.
 
-<strong>GIS Formatting Considerations</strong><br>
+### GIS Formatting Considerations:
 
-To successfully use a CSV or Google Sheet in GIS software:<br>
+To successfully use a CSV or Google Sheet in a GIS software to make a map: 
 
-<ul>
-  <li>
-    Each column contains a different type of information.
-    <ul>
-      <li>For spatial data: latitude and longitude (in separate columns), place names, or addresses.</li>
-    </ul>
-  </li>
+* Each column contains a different type of information:   
+  * For spatial data: latitude / longitude (in separate columns), place names, or addresses   
+* Each column has a header in the first row of the table   
+  * First character in the column header must be a letter   
+  * Don’t use special characters (exception: underscore) or spaces in the header  
+  * Make sure each header is unique   
+  * No subheaders  
+* Use consistent formatting in a given column   
+* Each row represents a different feature   
+* No blank rows (or subheaders)  
+* In a table join: ensure that that headers match
 
-  <li>
-    Each column has a header in the first row of the table.
-    <ul>
-      <li>First character in the column header must be a letter.</li>
-      <li>Don't use special characters (except underscores) or spaces in headers.</li>
-      <li>Ensure each header is unique.</li>
-      <li>No subheaders.</li>
-    </ul>
-  </li>
+Not this …
 
-  <li>Use consistent formatting within a column.</li>
-  <li>Each row represents a different feature.</li>
-  <li>No blank rows.</li>
-  <li>For table joins, ensure matching field names and formats.</li>
-</ul>
+![Table showing county, ethnicity and other variables](assets/images/graph1.png)
 
-<br>
+This:
 
-<strong>Not This</strong>
-<br>
+![Table showing countys with ethnicity expanded out](assets/images/graph2.png)
 
-{{ '/assets/images/graph1.png' | relative_url }}
+### Cleaning Messy Data:
 
-<br>
+* [OpenRefine](https://openrefine.org/): a powerful free, open source tool for working with messy data: *cleaning it*; transforming it from one format into another; and extending it.
 
-<strong>This</strong>
-<br>
+### General Resources:
 
-{{ '/assets/images/graph2.png' | relative_url }}
+* Cleaning messy coordinate data: [https://coordinatemapper.com/resources/how-to-clean-messy-coordinate-data](https://coordinatemapper.com/resources/how-to-clean-messy-coordinate-data)  
+* Analyzing and visualizing data: [https://guides.library.ucla.edu/c.php?g=1234052\&p=9127691](https://guides.library.ucla.edu/c.php?g=1234052&p=9127691)
 
-<br>
 
-<strong>Cleaning Messy Data</strong>
-
-<ul>
-  <li>
-    <strong>OpenRefine</strong> – A powerful free, open-source tool for cleaning,
-    transforming, and enriching messy datasets.
-  </li>
-</ul>
-
-<strong>General Resources</strong>
-
-<ul>
-  <li>
-    <a href="https://coordinatemapper.com/resources/how-to-clean-messy-coordinate-data">
-      Cleaning messy coordinate data
-    </a>
-  </li>
-  <li>
-    <a href="https://guides.library.ucla.edu/c.php?g=1234052&p=9127691">
-      Analyzing and visualizing data</a>
-  </li>
-</ul>
