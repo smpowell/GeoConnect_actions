@@ -38,6 +38,7 @@ You might choose different approaches depending on how you wish to visualize you
   <button onclick="expandAll()">Expand all</button>
   <button onclick="collapseAll()">Collapse all</button>
 </div>
+<div markdown="1">
 <details class="collapsible">
 <summary><strong>Addresses</strong></summary>
 
