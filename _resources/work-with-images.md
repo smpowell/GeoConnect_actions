@@ -16,7 +16,7 @@ next-steps:
     ref: qual-quant   
 ---
 <nav class="breadcrumbs">
-  <a href="{{ '/' | relative_url }}">do-you-have-data</a>
+  <a href="{{ '/' | relative_url }}">Home</a>
 
   {% if page.parent %}
     /
