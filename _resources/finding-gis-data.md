@@ -16,7 +16,7 @@ next-steps:
     label: "Ready to work with your data?"
 ---
 <nav class="breadcrumbs">
-  <a href="{{ '/' | relative_url }}">Geocoding</a>
+  <a href="{{ '/' | relative_url }}">Home</a>
 
   {% if page.parent %}
     /
