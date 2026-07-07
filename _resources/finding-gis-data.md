@@ -14,10 +14,18 @@ next-steps:
   - type: question
     ref: how-is-your-data-formatted
     label: "Ready to work with your data?"
-  - type: resource
-    ref: get-help
-    label: "Contact a UC GIS librarian for help."
 ---
+<nav class="breadcrumbs">
+  <a href="{{ '/' | relative_url }}">Geocoding</a>
+
+  {% if page.parent %}
+    /
+    <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
+  {% endif %}
+
+  /
+  <span>{{ page.title }}</span>
+</nav>
 
 ## Finding Quality GIS Data
 
