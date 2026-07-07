@@ -114,8 +114,6 @@ function collapseAll() {
 }
 </script>
 
----
-
 ## Did You Know?
 
 - If you ingested your data using ArcGIS Pro or ArcGIS Online, you can add additional datasets using the ArcGIS Living Atlas.
