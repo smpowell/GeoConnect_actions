@@ -15,6 +15,18 @@ next-steps:
     ref: get-help
     label: "Contact a UC GIS librarian for help."
 ---
+
+<nav class="breadcrumbs">
+  <a href="{{ '/' | relative_url }}">Home</a>
+
+  {% if page.parent %}
+    /
+    <a href="{{ page.parent_url | relative_url }}">{{ page.parent }}</a>
+  {% endif %}
+
+  /
+  <span>{{ page.title }}</span>
+</nav>
 More detailed tutorial info....
 
 Lorem ipsum dolor sit amet tristique sed suspendisse diam elementum non duis mauris massa. Proin odio dolore risus sollicitudin aenean consequat lobortis luctus pretium eleifend. Vivamus molestie cursus molestie enim fusce facilisi rhoncus curabitur a nisi dictum platea mauris. Bibendum vitae imperdiet gravida nullam integer volutpat laoreet maecenas at sapien etiam. Volutpat arcu do euismod rhoncus erat lacinia sodales.
