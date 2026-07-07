@@ -150,5 +150,4 @@ function collapseAll() {
 {% capture visualize_content %}
 {% include sources/visualize.md %}
 {% endcapture %}
-
 {{ visualize_content | markdownify }}
