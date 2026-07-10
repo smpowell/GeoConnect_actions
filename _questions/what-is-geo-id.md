@@ -1,6 +1,5 @@
 ---
 title: "What is the geographic identifier?"
-sub-title: "This page would include general spreadsheet formatting tips. Examples of badly-structured--> well-structured. Also include info about what geographic identifiers are. Resource to link to: https://www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html"
 parent: "getting started with data"
 permalink: /what-is-geo-id/
 next-steps:
